@@ -67,14 +67,6 @@ wait
 # Establecer las aplicaciones por defecto para cada mimetype
 "$HOME"/.dotfiles/updater/xdg-config &
 
-# Usar xdg-open para firefox
-[ -d "$DATA_DIR/dbus-1/services/" ] ||
-	mkdir -p "$DATA_DIR/dbus-1/services/"
-
-[ -f "$DATA_DIR/dbus-1/services/org.freedesktop.FileManager1.service" ] ||
-	echo "Exec=/bin/false" |
-	tee "$DATA_DIR/dbus-1/services/org.freedesktop.FileManager1.service"
-
 #######################################
 # Archivos de configuración y scripts #
 #######################################
